@@ -12,7 +12,7 @@ class QuotesDisplay extends React.Component {
   }
 
   fetchQuote (id) {
-    axios.get('api/quotes/${id}')
+    axios.get(`api/quotes/${id}`)
         .then(response => {
           this.setState({ quote: response.data })
         })
@@ -29,7 +29,7 @@ class QuotesDisplay extends React.Component {
     } else {
       this.quoteId = 1
       // update URL in browser to reflect current quote in query string
-      this.props.history.push('/?quote=${this.quoteId}')
+      this.props.history.push(`/?quote=${this.quoteId}`)
     }
   }
 
@@ -48,14 +48,12 @@ class QuotesDisplay extends React.Component {
 
     return (
       <div>
-        <Link to={'/?quote=${nextQuoteId}'}>Next</Link>
+        <Link to={`/?quote=${nextQuoteId}`}>Next</Link>
         <p>{this.state.quote.text}</p>
         <p>{this.state.quote.author}</p>
       </div>
     )
   }
-
 }
 
-
-export default QuotesDisplay;
+export default QuotesDisplay
