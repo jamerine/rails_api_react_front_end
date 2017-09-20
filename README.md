@@ -1,24 +1,9 @@
-# README
+- Ruby 2.3.3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Rails 5.1.4
 
-Things you may want to cover:
+- Rails API app with React SPA front end
 
-* Ruby version
+- Used Webpacker gem that comes bundled with Rails version 5.1.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Tutorial from Andy Barnov: https://x-team.com/blog/get-in-full-stack-shape-with-rails-5-1-webpacker-and-reactjs/
